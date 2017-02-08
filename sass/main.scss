@@ -1,0 +1,319 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "font-face";
+@import "header";
+
+.clearfix:after { 
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+   
+   
+
+/*** HEX CONTENT  end **********************************************************************/
+.hex_cont {
+    padding: 10px 0; 
+}
+    
+
+.hex--container {
+    max-width: 960px;
+    margin: 10px auto; 
+    padding: 60px 2% 70px 2%;
+    border-width: 1px;
+    border-color: #E4E9EB;
+    border-style: solid none solid none;
+}
+
+#hexGrid {
+    overflow: hidden;
+    
+}
+
+
+.hex {
+    width: 90%;
+    position: relative;
+    list-style-type: none;
+    float: left;
+    overflow: hidden;
+    visibility: hidden;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+    transform: rotate(-60deg) skewY(30deg) translatez(-1px);
+}
+
+
+.hex * {
+    position: absolute;
+    visibility: visible;
+    outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+
+.hexIn {
+    display:block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    transform: skewY(-30deg) rotate(60deg);
+}
+.hex img {
+    left: -100%;
+    right: -100%;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*** HEX CONTENT  end **********************************************************************/
+
+
+.author--container {
+    width: 100%;
+    background: #2EB398;
+}
+
+.wrap--author--container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 2% 15px 2%;
+}
+
+.author {
+    border-width:1px;
+    border-color:#219D84;
+    border-style:  none solid none solid ;
+     padding: 10px 2% 10px 2%;
+ }
+
+
+
+.author--photo {
+  margin-right: 20px;
+  position:relative;
+  list-style-type:none;
+  width: 200px;
+  height: 230px;
+  overflow:hidden;
+  transform: rotate(-60deg) skewY(30deg);
+}
+
+.ph--png {
+  width:100%;
+  height:100%;
+  transform: skewY(-30deg) rotate(60deg);
+}
+
+.nema--author {
+   font:30px 'maven_proregular';
+   color:#d7fcf5;
+}
+
+.about--work {
+   font: 18px 'maven_proregular';
+   color:#20816d;
+}
+
+.about--work--tx {
+   font: 12px 'latoregular';
+   color: #d7fcf5;
+   margin-top:15px;
+   line-height: 20px;
+   text-align: justify;
+}
+
+.social--icon--line {
+    display: inline-block;
+    float: right;
+    margin-top: 50px;
+    filter: sepia(0.9);
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    background: url(../images/hexal_social.png) no-repeat;
+    display: block;
+    float: left;
+}
+
+.facebook {
+    background-position: 0 0;
+}
+
+
+.twitter{
+      background-position: -25px 0;
+}
+
+.google_plus{
+    background-position: -49px 0;
+}
+
+.pinterest{
+    background-position: -74px 0
+}
+
+.linkedin{
+    background-position: -98px 0;
+}
+
+.dribbble {
+    background-position: -123px 0;
+}
+
+.get--in--toch {
+    width: 100%;
+    background: #323232;
+    padding: 20px 0;
+
+}
+
+.wrap--get {
+    max-width: 960px;
+    margin: 0 auto;
+    border-width:1px;
+    border-color:#2A2A2A;
+    border-style:  solid none solid none ;
+}
+
+
+.form--container {
+     padding: 15px 2% 15px 2%;
+  }
+
+.form--hd {
+    font: 30px 'maven_proregular';
+    color: #e0e0e0;
+}
+
+.form--hd2{
+   font: 18px  'maven_proregular';
+   color: #e0e0e0;
+   margin-bottom: 20px
+}
+
+ 
+
+.feedback--form {
+    max-width: 660px;  
+}
+
+ ::-webkit-input-placeholder  { 
+    font: 12px 'latoregular';
+    color: #bebebe; 
+}
+
+
+
+.reg-form-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background: #454545;
+    color: #fff;
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    background: #454545;
+    border: none;
+    outline: none;
+    resize: none;
+    padding-left: 15px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.reg-form-btm {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    display: inline-block;
+    background: #219D84;
+    border: none;
+    outline: none;
+    color: #d7fcf5;
+    text-transform: uppercase;
+    font: 12px 'latobold';
+}
+
+.contact--info {
+    width: 100%;
+    margin: 20px 0;
+    text-align: justify; 
+}
+
+ .con--text {
+     font: 12px 'latobold';
+     color: #bebebe;
+     line-height: 25px;    
+}
+
+.qui--hend {
+    font: 12px 'Lato-Black';
+    color: #e0e0e0;
+}
+
+.callback p {
+    font: 12px 'latobold';
+    color: #bebebe;
+    position: relative;
+    padding-left: 30px;
+    margin-top: 10px;
+     &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+     }
+}
+
+.location:after {
+    content: url(../images/hexal_location.png); 
+}
+.phone:after {
+    content:  url(../images/hexal_phone.png);
+}
+.mail:after {
+    content:  url(../images/hexal_mail.png);
+}
+
+footer {
+    width: 100%;
+    background:#222222;
+}
+
+.footer--wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px 5px;
+}
+
+.ft--h2 {
+  font: 12px 'maven_proregular';
+  color: #454545;
+}
+
+
+
+
